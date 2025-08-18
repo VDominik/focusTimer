@@ -1,0 +1,54 @@
+<div class="timer">
+  <div class="headings">
+    <h1>Focus Timer</h1>
+    <p>Create your calm workspace</p>
+  </div>
+  <div class="inputs">
+    <input
+      type="text"
+      placeholder="What are you working on?"
+      name="focus-time"
+      [(ngModel)]="workTitle"
+    />
+    <div class="input-buttons">
+      <p>Choose your focus time</p>
+      <button
+        class="focus-time-button"
+        [class.isActive]="focusTime() === 15 && !customFocusTime()"
+        (click)="buttonClick(15)"
+      >
+        15m
+      </button>
+      <button
+        class="focus-time-button"
+        [class.isActive]="focusTime() === 30 && !customFocusTime()"
+        (click)="buttonClick(30)"
+      >
+        30m
+      </button>
+      <button
+        class="focus-time-button"
+        [class.isActive]="focusTime() === 45 && !customFocusTime()"
+        (click)="buttonClick(45)"
+      >
+        45m
+      </button>
+    </div>
+    <div class="input-custom">
+      <input
+        type="number"
+        placeholder="Custom"
+        name="custom"
+        [class.isActive]="customFocusTime()"
+        [(ngModel)]="customFocusTime"
+      />
+      <p>minutes</p>
+    </div>
+    <div class="start-button">
+      <button class="start-timer-button" (click)="startFocusSession()">
+        <a routerLink="/countdown">Start Focus Session</a>
+      </button>
+    </div>
+    <p>Ready to focus? Choose your task and time</p>
+  </div>
+</div>

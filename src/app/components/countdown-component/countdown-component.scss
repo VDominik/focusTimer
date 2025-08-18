@@ -1,0 +1,120 @@
+:host {
+  background-color: white;
+  border-radius: 24px;
+  padding: 24px;
+  max-width: 28rem;
+  width: 100%;
+
+  .countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin: 0 0 24px 0;
+      font-size: 1.5rem;
+      color: #363949;
+      text-align: center;
+    }
+  }
+
+  .timer-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .time {
+      font-size: 4rem;
+      font-weight: 300;
+      margin: 0;
+      color: #363949;
+    }
+
+    .total-time {
+      font-size: 0.9rem;
+      color: #73778c;
+      margin: 8px 0 0 0;
+    }
+  }
+
+  .progress-container {
+    width: 300px;
+    height: 8px;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+    margin: 16px 0;
+    overflow: hidden;
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #4a90e2, #357ab8);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+      box-shadow: 0 2px 4px rgba(74, 144, 226, 0.3);
+    }
+  }
+
+  .focus-time {
+    font-weight: 900;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+
+    .start-timer-button,
+    .pause-timer-button,
+    .resume-timer-button,
+    .reset-timer-button {
+      padding: 12px 24px;
+      border-radius: 12px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .start-timer-button,
+    .resume-timer-button {
+      background-color: #bee2f4;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .pause-timer-button {
+      background-color: #bee2f4;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .reset-timer-button {
+      background-color: #c0f2da;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .completion-message {
+    color: #4caf50;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .encouragement {
+    color: #73778c;
+    font-size: 0.9rem;
+    margin-top: 16px;
+    text-align: center;
+  }
+}
