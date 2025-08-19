@@ -69,6 +69,18 @@
     gap: 16px;
     margin-top: 16px;
 
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
     .start-timer-button,
     .pause-timer-button,
     .resume-timer-button,

@@ -120,6 +120,18 @@
       justify-content: center;
       width: 100%;
 
+      .start-timer-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: white;
+        }
+      }
+
       button {
         width: 100%;
         padding: 14px 32px;

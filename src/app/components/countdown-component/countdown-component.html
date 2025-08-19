@@ -14,14 +14,42 @@
 
   <div class="buttons">
     @if (!isRunning() && !isPaused()) {
-    <button class="start-timer-button" (click)="startTimer()">Start</button>
+    <button class="start-timer-button" (click)="startTimer()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <path
+          d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z"
+        />
+      </svg>
+      Start
+    </button>
     } @else if (isRunning()) {
-    <button class="pause-timer-button" (click)="pauseTimer()">Pause</button>
+    <button class="pause-timer-button" (click)="pauseTimer()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <path
+          d="M176 96C149.5 96 128 117.5 128 144L128 496C128 522.5 149.5 544 176 544L240 544C266.5 544 288 522.5 288 496L288 144C288 117.5 266.5 96 240 96L176 96zM400 96C373.5 96 352 117.5 352 144L352 496C352 522.5 373.5 544 400 544L464 544C490.5 544 512 522.5 512 496L512 144C512 117.5 490.5 96 464 96L400 96z"
+        />
+      </svg>
+      Pause
+    </button>
     } @else if (isPaused()) {
-    <button class="resume-timer-button" (click)="startTimer()">Resume</button>
+    <button class="resume-timer-button" (click)="startTimer()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <path
+          d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z"
+        />
+      </svg>
+      Resume
+    </button>
     }
 
-    <button class="reset-timer-button" (click)="resetTimer()">Reset</button>
+    <button class="reset-timer-button" (click)="resetTimer()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <path
+          d="M552 256L408 256C398.3 256 389.5 250.2 385.8 241.2C382.1 232.2 384.1 221.9 391 215L437.7 168.3C362.4 109.7 253.4 115 184.2 184.2C109.2 259.2 109.2 380.7 184.2 455.7C259.2 530.7 380.7 530.7 455.7 455.7C463.9 447.5 471.2 438.8 477.6 429.6C487.7 415.1 507.7 411.6 522.2 421.7C536.7 431.8 540.2 451.8 530.1 466.3C521.6 478.5 511.9 490.1 501 501C401 601 238.9 601 139 501C39.1 401 39 239 139 139C233.3 44.7 382.7 39.4 483.3 122.8L535 71C541.9 64.1 552.2 62.1 561.2 65.8C570.2 69.5 576 78.3 576 88L576 232C576 245.3 565.3 256 552 256z"
+        />
+      </svg>
+      Reset
+    </button>
   </div>
 
   @if (timeRemaining() === 0) {
