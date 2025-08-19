@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100dvh;
   background-color: #f1ecf9;
+
+  @media screen and (max-width: 600px) {
+    padding: 16px;
+    box-sizing: border-box;
+  }
 }
