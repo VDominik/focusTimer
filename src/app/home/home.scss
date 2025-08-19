@@ -5,4 +5,9 @@
   justify-content: center;
   height: 100vh;
   background-color: #f1ecf9;
+
+  @media screen and (max-width: 600px) {
+    padding: 16px;
+    height: auto;
+  }
 }
