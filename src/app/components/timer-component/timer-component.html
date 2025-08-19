@@ -10,29 +10,31 @@
       name="focus-time"
       [(ngModel)]="workTitle"
     />
-    <div class="input-buttons">
+    <div class="input-times">
       <p>Choose your focus time</p>
-      <button
-        class="focus-time-button"
-        [class.isActive]="focusTime() === 15 && !customFocusTime()"
-        (click)="buttonClick(15)"
-      >
-        15m
-      </button>
-      <button
-        class="focus-time-button"
-        [class.isActive]="focusTime() === 30 && !customFocusTime()"
-        (click)="buttonClick(30)"
-      >
-        30m
-      </button>
-      <button
-        class="focus-time-button"
-        [class.isActive]="focusTime() === 45 && !customFocusTime()"
-        (click)="buttonClick(45)"
-      >
-        45m
-      </button>
+      <div class="input-buttons">
+        <button
+          class="focus-time-button"
+          [class.isActive]="focusTime() === 15 && !customFocusTime()"
+          (click)="buttonClick(15)"
+        >
+          15m
+        </button>
+        <button
+          class="focus-time-button"
+          [class.isActive]="focusTime() === 30 && !customFocusTime()"
+          (click)="buttonClick(30)"
+        >
+          30m
+        </button>
+        <button
+          class="focus-time-button"
+          [class.isActive]="focusTime() === 45 && !customFocusTime()"
+          (click)="buttonClick(45)"
+        >
+          45m
+        </button>
+      </div>
     </div>
     <div class="input-custom">
       <input

@@ -5,6 +5,11 @@
   max-width: 28rem;
   width: 100%;
 
+  @media (max-width: 600px) {
+    padding: 16px;
+    width: auto;
+  }
+
   .headings {
     display: flex;
     flex-direction: column;
@@ -65,7 +70,7 @@
       }
     }
 
-    .input-buttons {
+    .input-times {
       p {
         font-size: 1rem;
         color: #73778c;
@@ -73,6 +78,11 @@
         margin-bottom: 0;
         text-align: center;
       }
+    }
+
+    .input-buttons {
+      display: flex;
+
       button {
         background-color: #96e9c2;
         border: none;

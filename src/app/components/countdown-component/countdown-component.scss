@@ -5,6 +5,10 @@
   max-width: 28rem;
   width: 100%;
 
+  @media (max-width: 600px) {
+    width: auto;
+  }
+
   .countdown {
     display: flex;
     flex-direction: column;
